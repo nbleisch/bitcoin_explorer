@@ -1,2 +1,18 @@
-<h3>User</h3>
-<p>Name: <%= @user.name if @user.name %></p>
+<h3>Profile of <%= @user.name if @user.name %></h3>
+
+<hr />
+
+<div class="container">
+  <%= form_for(@user) do |f| %>
+      <div class="form-group row">
+        <%= f.label :bitcoin_de_api_key, "API Key", class: "col-form-label" %>
+        <div class="col-4">
+          <%= f.text_field :bitcoin_de_api_key, class: 'form-control' %>
+        </div>
+        <%= f.submit "Update", class: "btn btn-primary" %>
+      </div>
+      <div class="form-group row">
+
+      </div>
+  <% end %>
+</div>
