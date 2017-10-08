@@ -47,3 +47,6 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
 end
+
+# Added at 2017-10-08 20:42:07 +0200 by nilsbleisch:
+gem "httparty", "~> 0.15.6"
